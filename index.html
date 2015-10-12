@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--NM2207 Assignment 3-->
+<!--Done by: Abigail Lum Yan Yi (A0116782B) & Koren Lam -->
+<!--Tutorial Class W4-->
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+
+        <!--Loads our javascript file, mainassn.js-->
+        <script type="text/javascript" data-main="appscripts/mainassn.js" src="jslibs/require.js">
+        </script>
+    </head>
+
+    <body>
+         <!--Name of our game-->
+         <h3>SPACERACE2207</h3>
+            
+            <!--Heading to prompt the player to select a difficulty level-->
+            <h4> Select Difficulty Level:</h4>
+            
+            <!--Dropdown menu to select difficulty level-->
+            <!--3 levels of difficulty were set: Easy, Medium and Difficult-->
+            <center><select id="myList">
+              <option value="1">Easy</option>
+              <option value="2">Medium</option>  
+              <option value="3">Difficult</option>
+            </select></center><br>
+            
+            <!--Button to set the level of difficulty selected and for the player to indicate that he/she is ready for the game to start-->
+            <center><input id="readyButton" type="button" value="Let's Go!"></center><br>
+            
+            <!--The canvas where gameplay takes place-->
+            <div id="mySVGCanvas" > </div><br>
+            
+            <!--Button to allow the player to end the game whenever he/she desires, even if it is before the 10 seconds is up-->
+            <center><input id="endButton" type="button" value="End Game"></center>
+    </body>
+</html>
+
